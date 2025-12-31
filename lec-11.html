@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu | Nav</title>
+    <!-- bootstrap for css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <style>
+        .custom-link-style::after{
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #f44336;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        .custom-link-style:hover::after{
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="nav-section bg-primary">
+        <div class="row">
+            <div class="col-lg-5 m-auto">
+                <h1 class="text-white text-center mb-0">Seemanto Kumar Dash</h1>
+            </div>
+
+            <div class="col-lg-7">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item"><a class="custom-link-style nav-link text-white text-center" href="#">Home</a></li>
+                    <li class="nav-item"><a class="custom-link-style nav-link text-white text-center" href="#">Contact Me</a></li>
+                    <li class="nav-item"><a class="custom-link-style nav-link text-white text-center" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- bootstrap for js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    learning:
+        ~ step for creating navbar
+            1. row nam diye ekta container div
+                -> er vitore thakbe nav element. Like: logo, text, navMenu
+            2. navbar a joto ta part totota div alada class name diye nibo
+            3.div a class hisabe col-lg col-mn eigula needed time buje set korbo
+            4. nav link er jonno ul li and a te correct class bosabo
+                                                                    - thats it...
+        outcome -> learn how to create simple navbar in website
+        covering topic: 
+            1. nav class in ul
+            2. nav-item class in li
+            3. nav-link class in a
+            4. justify-content class in ul
+ -->
