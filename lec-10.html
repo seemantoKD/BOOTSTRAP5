@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collapse and pagination</title>
+    <!-- bootstrap for css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- create pagination -->
+    <h3>This is pagination</h3>
+    <div class="bg-dark">
+        <ul class="pagination py-3 justify-content-center">
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+        </ul>
+    </div>
+
+    <!-- create collapse -->
+    <h3>This is collapse</h3>
+    <div>
+        <a href="#demo" data-bs-toggle="collapse">Learn More</a>
+
+        <div id="demo" class="collapse">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium delectus quod maxime. Deserunt sit
+                ut dignissimos distinctio non, illum similique!
+            </p>
+        </div>
+    </div>
+
+
+    <!-- bootstrap for js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    learning:  
+        ~ pagination
+            * website a onekgula page thakle tokhon ek page theke
+            arek page a move korar jonno basically pagination use hoy.
+
+        ~ collapse 
+            * kunu ekta lekhar upor click korle details dekhabe
+            like : learn more.... mainly hide and show
+
+        - step for creating pagination:
+            i. ul er vitor class dibo pagination'
+            ii. li er vitor class dibo page-item
+            iii. a er vitor class dibo page-link
+
+        - step for creating collapse:
+            i. a tag nibo then class hisabe data-bs-toggle nibo
+                value hisabe dibo collapse.
+
+            ii. div nibo. div er vitore p nibo. div er class dibo ekta
+                ar id dibo ekta. class er value hobe collapse.
+
+            iii. id er nam ja dibo seta # diye a tage a bosabo... thats it
+
+    covering topic: 
+        1. pagination class
+        2. page-item class
+        3. page-link class
+        4. justify-content class
+        5. data-bs-toggle class
+        6. collapse class
+-->
