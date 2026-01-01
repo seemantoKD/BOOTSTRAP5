@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggleable dynamic tab and pill</title>
+    <!-- bootstrap for css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <section class="toggleable-dynamic-tab">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link active" href="#edu" data-bs-toggle="pill">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skill" data-bs-toggle="pill">Skill</a></li>
+            <li class="nav-item"><a class="nav-link" href="#hobby" data-bs-toggle="pill">Hobby</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="edu" class="tab-pane active">
+                <p>
+                    1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia eos at facilis quidem doloribus
+                    velit possimus et fugit nulla molestiae!
+                </p>
+            </div>
+
+            <div id="skill" class="tab-pane fade">
+                <p>
+                    2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere tempora cumque dolorum in vitae
+                    totam voluptates recusandae, temporibus natus. Vitae?
+                </p>
+            </div>
+
+            <div id="hobby" class="tab-pane fade">
+                <p>
+                    3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nostrum quisquam reiciendis nulla
+                    consectetur cum, expedita totam quis! Numquam, dolore!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- bootstrap for js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    learning:
+        ~ toggleable tab and pill
+            * Tabs / Pills → একই পেজে আলাদা আলাদা কনটেন্ট দেখানোর UI
+            * Toggleable → একটাতে ক্লিক করলে সেই কনটেন্ট দেখাবে, বাকিগুলো হাইড থাকবে।
+            # Tabs → উপরে দাগ (border) সহ থাকে
+            # Pills → বাটনের মতো গোল (rounded)
+
+        - steps for creating tab
+            i. container er class dibo tab-content
+            ii. container er vitor er div/content gular id dibo
+            iii. id gula nav er a tag a # diye bosabo
+            iv. container er content gula initially hide rakhar jonno
+                tab-pane class use korte hobe
+            v. a tag er vitore data-bs-toggle = "tab" use korbo. eta use korle
+                jar kache jete cai setate click korle niye jabe.
+            vi. tab er moto dekhar jonno ul a nav-tabs use korbo
+                                                                - thats it..
+
+        - steps for creating pill
+            * sob same just nav-tabs er jaygay nav-pills
+                r data-bs-toggle hobe pill.
+
+        covering topic: 
+            1. tab-content class
+            2. tab-pane class
+            3. data-bs-toggle
+            4. fade -> for some animation
+            5. active -> initially eta active rakhar jonno
+            6. nav-tabs class in ul
+ -->
