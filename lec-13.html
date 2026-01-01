@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapseable navbar</title>
+    <!-- bootstrap for css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <section class="nav-section">
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: black;">
+            <!-- nav logo -->
+            <a href="" class="navbar-brand">
+                <img style="width: 50px;"
+                    src="data:image/png;base64,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"
+                    alt="">
+            </a>
+
+            <!--creating collapse bar for small screen-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tutorial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <!-- bootstrap for js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    learning: 
+        ~ steps for creating navbar
+            1. nav create korbo
+                then change something
+                    i. ul er class nav er bodole navbar-nav hobe
+                    ii. ul er parent hobe navbar
+                    iii. ul er parent a responsiveness er jonno 
+                        navbar-expand-sm eigula use kora jay.
+
+        ~ navbar colorizing
+            i. nav er text style er jonno navbar-light/dark use kora jay
+        ~ navbar logo set
+            1. hyperlink use kora hoy r a tag er class deya hoy navbar-brand
+        ~ navbar alignment
+            i. navbar er container a justify-content-center use korbo
+        ~ navbar positioning
+            i. bootstrap class use kore fixed/relative/position etc use kora jay
+        *** collapseable navbar
+            i. eita create korar jonno ekta bootstrap er div and bootstrap er 
+                button use kora lage.
+-->
