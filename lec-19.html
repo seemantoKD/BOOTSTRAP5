@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badge, tooltip and progress</title>
+    <!-- bootstrap for css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body class="p-3">
+    <!-- badge -->
+    <!-- <h2>
+        bootstrap5 videos <span class="badge bg-secondary rounded-pill">New</span>
+    </h2>
+
+    <button class="btn btn-primary">
+        Download <span class="badge bg-secondary rounded-pill">25</span>
+    </button> -->
+
+    <!-- tooltip -->
+    <!-- <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right" title="click here to submit">
+        submit
+    </button> -->
+
+    <!-- progress -->
+    <div class="progress">
+        <div class="progress-bar bg-primary w-25" role="progressbar" aria-valuenow="25" aria-valuemax="100" aria-valuemin="25"></div>
+        <div class="progress-bar bg-danger w-25" role="progressbar" aria-valuenow="25" aria-valuemax="100" aria-valuemin="25"></div>
+        <div class="progress-bar bg-success w-25" role="progressbar" aria-valuenow="25" aria-valuemax="100" aria-valuemin="25"></div>
+    </div>
+
+    <!-- bootstrap for js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    learning:
+        ~ for badge
+            1. badge class
+            2. rounded-pill class
+
+        ~ for tooltip
+            1. data-bs-toggle a value thakbe tooltip
+            2. data-bs-placement a value thakbe jedike tooltip bosabo seta like : right,left etc
+            3. title a value hisabe ja dekhabe text seta bosabo
+        
+        ~ for progress
+            1. duita div nibo
+                -> first div er class hobe progress
+                -> second div er class hobe progress-bar
+ -->
